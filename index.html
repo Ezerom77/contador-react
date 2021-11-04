@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta Tags PWA-->
+    <!-- esto cambia el color de la barra de tareas en antroid -->
+    <meta name="theme-color" content="#333333"/> 
+    
+    <meta name="MobileOptimized" content="width"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <!-- esto es requerido para ios y que tome el color de la barra de estado -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/> 
+    <!-- existen tres, default que es blanco, black que es negro y black-translucent que toma el color por defecto y adpta color de la app -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/> 
+    <!--Icons-->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!-- esta es la imagen que va a aparecer en el dispositivo ios -->
+    <link rel="apple-touch-icon" href="./favicon.png" type="image/x-icon">
+    <link rel="apple-touch-startup-image" href="./favicon.png" type="image/x-icon">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!--Styles-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Title-->
+    <title>ReactJS Reloaded</title>
+    <!-- Scripts-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel" src="./components/Contador.js""></script>
+    <script type="text/babel" src="./index.js"></script>
+    <script type="text/babel" src="./register.js"></script>
+   
+  </body>
+</html>
